@@ -1,28 +1,32 @@
 var calendarFormEl = $('#calendarForm');
 var containerEl = $('#container');
-var dummyAlgo;
+var saveBtn = $('#saveBtn');
 
-function handleFormSubmit(event) {
-    event.preventDefault();
+ function handleFormSubmit(event) {
+   event.preventDefault();
 
     var calendarItem = $('input[name="note-input"]').val();
       
-    if (!calendarItem) {
-        console.log('No item added!');
-        return;
+     if (!calendarItem) {
+         console.log('No item added!');
+         return;
     }
 
     var containerEl = $(
-        '<li class="flex-row justify-space-between align-center p-2 bg-light text-dark">'
-    );
+         '<li class="flex-row justify-space-between align-center p-2 bg-light text-dark">'
+     );
     containerEl.text()
+  }
+function SaveNote(cats, dogs) {
+    alert("SaveNote works");
 }
 
-dummyAlgo.addEventListener()  // TODO: Finish event listener
+$('.saveBtn').click(function() {
+    console.log($(this));
+  });
 
+localStorage.setItem(key)
 
-localStorage.setItem(,) // adding local storage
+ localStorage.getItem(key) 
 
-localStorage.getItem(key) 
-
-localStorage.removeItem(key)
+ localStorage.removeItem(key)

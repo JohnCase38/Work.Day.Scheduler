@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
@@ -29,25 +29,56 @@
       <p id="currentDay" input type="text" class="lead"></p>
     </header>
     <h2>Add an event to the calendar</h2>
-    <form id="calendar-form">
+    <!-- <form id="calendar-form"> -->
       <input type="text" class="form-input" id="note-input" name="note-input" placeholder="Add Event" />
-    </form>
-
-    <div class="container">
-      <p class="time-block">9:00</p>
-      <p class="time-block">10:00</p>
-      <p class="time-block">11:00</p>
-      <p class="time-block">12:00</p>
-      <p class="time-block">1:00</p>
-      <p class="time-block">2:00</p>
-      <p class="time-block">3:00</p>
-      <p class="time-block">4:00</p>
-    </div>
-
+      <table style="width:100%">
+        <tr>
+          <td class="time-block">9:00</td>
+          <td><input style="width:100%" type="text" id="9am" name="9am" value=""></td>
+          <button class="saveBtn" time="9"> save </button>
+        </tr>
+        <tr>
+          <td class="time-block">10:00</td>
+          <td><input style="width:100%" type="text" id="10am" name="10am" value=""></td>
+          <button class="saveBtn" time="10"> save </button>
+        </tr>
+        <tr>
+          <td class="time-block">11:00</td>
+          <td><input style="width:100%" type="text" id="11am" name="11am" value=""></td>
+          <button class="saveBtn" time="11"> save </button>
+        <tr>
+          <td class="time-block">12:00</td>
+          <td><input style="width:100%" type="text" id="Noon" name="Noon" value=""></td>
+          <button class="saveBtn"> save </button>
+        </tr>
+        <tr>
+          <td class="time-block">1:00</td>
+          <td><input style="width:100%" type="text" id="1pm" name="1pm" value=""></td>
+          <button class="saveBtn"> save </button>
+        </tr>
+        <tr>
+          <td class="time-block">2:00</td>
+          <td><input style="width:100%" type="text" id="2pm" name="2pm" value=""></td>
+          <button class="saveBtn"> save </button>
+        </tr>
+        <tr>
+          <td class="time-block">3:00</td>
+          <td><input style="width:100%" type="text" id="3pm" name="3pm" value=""></td>
+          <button class="saveBtn"> save </button>
+        </tr>
+        <tr>
+          <td class="time-block">4:00</td>
+          <td><input style="width:100%" type="text" id="4pm" name="4pm" value=""></td>
+          <button class="saveBtn"> save </button>
+        </tr>
+      </table>
+    <!-- </form> -->
+    
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script>
       let now = moment();
     </script>
+    <script src="./assets/script.js"></script>
   </body>
 </html>
